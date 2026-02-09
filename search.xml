@@ -1,26 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/posts/4a17b156.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>Say Hi, Say Cheese</title>
+    <url>/posts/3930ef41.html</url>
+    <content><![CDATA[<h2 id="1-About-Hicheese"><a href="#1-About-Hicheese" class="headerlink" title="1. About Hicheese"></a><strong>1. About Hicheese</strong></h2><p><strong>Hicheese</strong> is the alias for <strong>Zhou Zhixuan (周芷轩)</strong> on the web.</p>
+<ul>
+<li><strong>Identity</strong>: Undergraduate student at the School of Management and Engineering (SME), Nanjing University.</li>
+<li><strong>Major</strong>: Industrial Intelligence and System Integration (工业智能与系统集成) — an interdisciplinary field crossing <strong>Industrial Engineering</strong> and <strong>Automation</strong>.</li>
+<li><strong>Origin of Name</strong>: Derived from the phrase “Say Hi, Say Cheese”. It represents a simple greeting and a snapshot of the moment.</li>
+</ul>
+<p>This website serves as my personal digital space to archive learning notes, showcase projects, and experiment with web technologies.</p>
+<span id="more"></span>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="2-System-Modules-Status"><a href="#2-System-Modules-Status" class="headerlink" title="2. System Modules &amp; Status"></a><strong>2. System Modules &amp; Status</strong></h2><p>This portal is currently under active development. Below is the roadmap and current status of system modules.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Module</th>
+<th align="left">Description</th>
+<th align="left">Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Blog System</strong></td>
+<td align="left">Archiving academic notes (Optimization, Algorithms) and tech logs.</td>
+<td align="left">✅ <strong>Live</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>Cyber Gallery</strong></td>
+<td align="left">A masonry-layout gallery for photography and visual collection.</td>
+<td align="left">🚧 <strong>WIP (Planning)</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>About &#x2F; CV</strong></td>
+<td align="left">Detailed academic background, skills, and resume download.</td>
+<td align="left">🚧 <strong>WIP</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>Web Tools</strong></td>
+<td align="left">Integrated tools including Search, AI Chatbot, etc.</td>
+<td align="left">🚧 <strong>Partially Implemented</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>Interaction</strong></td>
+<td align="left">Comments (Waline), Visitor Counter.</td>
+<td align="left">✅ <strong>Live</strong></td>
+</tr>
+</tbody></table>
+<h2 id="3-Tech-Stack"><a href="#3-Tech-Stack" class="headerlink" title="3. Tech Stack"></a><strong>3. Tech Stack</strong></h2><p>This website is built upon a static site generation architecture, ensuring performance and security.</p>
+<ul>
+<li><strong>Core Framework</strong>: <a href="https://hexo.io/">Hexo</a> (v7.x)</li>
+<li><strong>Theme</strong>: <a href="https://butterfly.js.org/">Butterfly</a> (Heavily Customized)</li>
+<li><strong>Deployment</strong>: GitHub Pages + Cloudflare CDN</li>
+<li><strong>Interactive&#x2F;Backend</strong>: Node.js + Waline (Serverless)</li>
+</ul>
+<h2 id="4-Future-Updates"><a href="#4-Future-Updates" class="headerlink" title="4. Future Updates"></a><strong>4. Future Updates</strong></h2><p>Subsequent updates and development logs regarding this website will be archived under the tag #Dev Log.</p>
+<p>For academic discussions or feedback, please leave a comment below.</p>
+<p><em>Last Updated: 2025-02-09</em></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/posts/d87f7e0c.html</url>
-    <content><![CDATA[]]></content>
+      <categories>
+        <category>Dev Log</category>
+      </categories>
+      <tags>
+        <tag>Project Overview</tag>
+        <tag>Hicheese</tag>
+        <tag>Dev Log</tag>
+        <tag>Hexo</tag>
+        <tag>Industrial Intelligence</tag>
+        <tag>System Architecture</tag>
+        <tag>Roadmap</tag>
+      </tags>
   </entry>
 </search>
