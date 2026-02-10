@@ -1,13 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Say Hi, Say Cheese</title>
+    <url>/posts/3930ef41.html</url>
+    <content><![CDATA[<h2 id="1-About-Hicheese"><strong>1. About Hicheese</strong></h2>
+<p><strong>Hicheese</strong> is the alias for <strong>Zhou Zhixuan (周芷轩)</strong> on the web.</p>
+<ul>
+<li><strong>Identity</strong>: Undergraduate student at the School of Management and Engineering (SME), Nanjing University.</li>
+<li><strong>Major</strong>: Industrial Intelligence and System Integration (工业智能与系统集成实验班) — an interdisciplinary field crossing <strong>Industrial Engineering</strong> and <strong>Automation</strong>.</li>
+<li><strong>Origin of Name</strong>: Derived from the phrase “Say Hi, Say Cheese”. It represents a simple greeting and a snapshot of the moment.</li>
+</ul>
+<p>This website serves as my personal digital space to archive learning notes, showcase projects, and experiment with web technologies.</p>
+<span id="more"></span>
+<h2 id="2-System-Modules-Status"><strong>2. System Modules &amp; Status</strong></h2>
+<p>This portal is currently under active development. Below is the roadmap and current status of system modules.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Module</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Blog System</strong></td>
+<td style="text-align:left">Archiving academic notes (Optimization, Algorithms) and tech logs.</td>
+<td style="text-align:left">✅ <strong>Live</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Cyber Gallery</strong></td>
+<td style="text-align:left">A masonry-layout gallery for photography and visual collection.</td>
+<td style="text-align:left">🚧 <strong>WIP (Planning)</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>About / CV</strong></td>
+<td style="text-align:left">Detailed academic background, skills, and resume download.</td>
+<td style="text-align:left">🚧 <strong>WIP</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Web Tools</strong></td>
+<td style="text-align:left">Integrated tools including Search, AI Chatbot, etc.</td>
+<td style="text-align:left">🚧 <strong>Partially Implemented</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Interaction</strong></td>
+<td style="text-align:left">Comments (Waline), Visitor Counter.</td>
+<td style="text-align:left">✅ <strong>Live</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-Tech-Stack"><strong>3. Tech Stack</strong></h2>
+<p>This website is built upon a static site generation architecture, ensuring performance and security.</p>
+<ul>
+<li><strong>Core Framework</strong>: <a href="https://hexo.io/">Hexo</a> (v7.x)</li>
+<li><strong>Theme</strong>: <a href="https://butterfly.js.org/">Butterfly</a> (Heavily Customized)</li>
+<li><strong>Deployment</strong>: GitHub Pages + Cloudflare CDN</li>
+<li><strong>Interactive/Backend</strong>: Node.js + Waline (Serverless)</li>
+</ul>
+<h2 id="4-Future-Updates"><strong>4. Future Updates</strong></h2>
+<p>Subsequent updates and development logs regarding this website will be archived under the tag #Dev Log.</p>
+<p>For academic discussions or feedback, please leave a comment below.</p>
+<p><em>Last Updated: 2026-02-09</em></p>
+]]></content>
+      <categories>
+        <category>Dev Log</category>
+      </categories>
+      <tags>
+        <tag>Project Overview</tag>
+        <tag>Hicheese</tag>
+        <tag>Dev Log</tag>
+        <tag>Hexo</tag>
+        <tag>Industrial Intelligence</tag>
+        <tag>System Architecture</tag>
+        <tag>Roadmap</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Learning-Assisted Relaxations and Approximations</title>
     <url>/posts/75effbc.html</url>
     <content><![CDATA[<h2 id="1-引言">1. 引言</h2>
 <p>同一个固定的物理系统，在不同外部参数（Parameters, 
-    <span id="mjx-77db5cc">
+    <span id="mjx-b04f6fd">
       <style>
-      #mjx-77db5cc{
+      #mjx-b04f6fd{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -167,9 +243,9 @@ g[data-mml-node="xypic"] path {
     </span>
   ）下存在重复求解的问题。</p>
 
-    <span id="mjx-f3e94b4">
+    <span id="mjx-f8c86bf">
       <style>
-      #mjx-f3e94b4{
+      #mjx-f8c86bf{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -334,9 +410,9 @@ g[data-mml-node="xypic"] path {
 <p>在引入 ML 之前，需要先理解经典算法是如何工作的。它们的迭代过程正是 ML 试图加速的对象。</p>
 <h3 id="2-1-拉格朗日松弛-Lagrangian-Relaxation-LR">2.1 拉格朗日松弛 (Lagrangian Relaxation, LR)</h3>
 <p>拉格朗日松弛的核心思想是将&quot;难约束&quot; 
-    <span id="mjx-c7fb99f">
+    <span id="mjx-3f081b7">
       <style>
-      #mjx-c7fb99f{
+      #mjx-3f081b7{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -495,9 +571,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="6.979ex" height="1.805ex" role="img" focusable="false" viewBox="0 -716 3084.6 798" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></g><g data-mml-node="mi" transform="translate(750,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(1599.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(2655.6,0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mi>x</mi><mo>=</mo><mi>b</mi></math></mjx-assistive-mml></mjx-container>
     </span>
    转移到目标函数中，通过调节乘子 
-    <span id="mjx-cb35913">
+    <span id="mjx-434faea">
       <style>
-      #mjx-cb35913{
+      #mjx-434faea{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -658,9 +734,9 @@ g[data-mml-node="xypic"] path {
    来惩罚违反约束的行为。</p>
 <p>对偶更新公式：</p>
 
-    <span id="mjx-fe162e">
+    <span id="mjx-f6feed5">
       <style>
-      #mjx-fe162e{
+      #mjx-f6feed5{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -821,9 +897,9 @@ g[data-mml-node="xypic"] path {
   <p>数学本质：</p>
 <ul>
 <li><strong>次梯度 (Subgradient)</strong>：约束违反量 
-    <span id="mjx-4ea1bd7">
+    <span id="mjx-ab14a17">
       <style>
-      #mjx-4ea1bd7{
+      #mjx-ab14a17{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -982,9 +1058,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="9.509ex" height="2.497ex" role="img" focusable="false" viewBox="0 -853.7 4202.8 1103.7" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(389,0)"><path data-c="1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></g><g data-mml-node="msup" transform="translate(1139,0)"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mi" transform="translate(605,363) scale(0.707)"><path data-c="1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></g></g><g data-mml-node="mo" transform="translate(2384.6,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(3384.8,0)"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="mo" transform="translate(3813.8,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><mi>A</mi><msup><mi>x</mi><mi>k</mi></msup><mo>−</mo><mi>b</mi><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container>
     </span>
    本质上是对偶函数 
-    <span id="mjx-888bd81">
+    <span id="mjx-9f4c9a1">
       <style>
-      #mjx-888bd81{
+      #mjx-9f4c9a1{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -1144,9 +1220,9 @@ g[data-mml-node="xypic"] path {
     </span>
    的次梯度。</li>
 <li><strong>步长 (
-    <span id="mjx-24d0b11">
+    <span id="mjx-972af79">
       <style>
-      #mjx-24d0b11{
+      #mjx-972af79{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -1307,9 +1383,9 @@ g[data-mml-node="xypic"] path {
   )</strong>：通常采用 Polyak Step Size 或衰减步长，以保证收敛。</li>
 </ul>
 <p>痛点：存在试错和修正的过程（约束违反则增加 
-    <span id="mjx-b2940ca">
+    <span id="mjx-54c60da">
       <style>
-      #mjx-b2940ca{
+      #mjx-54c60da{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -1473,9 +1549,9 @@ g[data-mml-node="xypic"] path {
 <p>核心逻辑：</p>
 <ul>
 <li><strong>Shadow Prices</strong>：在 OCD 中，对偶变量 
-    <span id="mjx-1c87a81">
+    <span id="mjx-da13965">
       <style>
-      #mjx-1c87a81{
+      #mjx-da13965{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -1634,9 +1710,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.027ex;" xmlns="http://www.w3.org/2000/svg" width="1.319ex" height="1.597ex" role="img" focusable="false" viewBox="0 -694 583 706" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D706" d="M166 673Q166 685 183 694H202Q292 691 316 644Q322 629 373 486T474 207T524 67Q531 47 537 34T546 15T551 6T555 2T556 -2T550 -11H482Q457 3 450 18T399 152L354 277L340 262Q327 246 293 207T236 141Q211 112 174 69Q123 9 111 -1T83 -12Q47 -12 47 20Q47 37 61 52T199 187Q229 216 266 252T321 306L338 322Q338 323 288 462T234 612Q214 657 183 657Q166 657 166 673Z"></path></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>λ</mi></math></mjx-assistive-mml></mjx-container>
     </span>
    被直接解释为 Shadow Prices，即目标函数对约束边界变化的灵敏度 (
-    <span id="mjx-130c31e">
+    <span id="mjx-53058b9">
       <style>
-      #mjx-130c31e{
+      #mjx-53058b9{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -1805,9 +1881,9 @@ g[data-mml-node="xypic"] path {
 <h4 id="目标">目标</h4>
 <ul>
 <li>预测最优解 
-    <span id="mjx-cf6a7fd">
+    <span id="mjx-895280d">
       <style>
-      #mjx-cf6a7fd{
+      #mjx-895280d{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -1966,9 +2042,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.282ex" height="1.59ex" role="img" focusable="false" viewBox="0 -691.8 1008.6 702.8" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(605,363) scale(0.707)"><path data-c="2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z"></path></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>x</mi><mo>∗</mo></msup></math></mjx-assistive-mml></mjx-container>
     </span>
    的近似值 
-    <span id="mjx-aa75de2">
+    <span id="mjx-6606ecc">
       <style>
-      #mjx-aa75de2{
+      #mjx-6606ecc{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -2131,9 +2207,9 @@ g[data-mml-node="xypic"] path {
 <h4 id="机制">机制</h4>
 <ul>
 <li><strong>凸问题</strong>：提供高质量的 
-    <span id="mjx-06e68af">
+    <span id="mjx-4b4a779">
       <style>
-      #mjx-06e68af{
+      #mjx-4b4a779{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -2293,9 +2369,9 @@ g[data-mml-node="xypic"] path {
     </span>
   ，显著减少内点法（IPM）的迭代次数。</li>
 <li><strong>非凸问题</strong>：提供高质量的 
-    <span id="mjx-aa98a6b">
+    <span id="mjx-da328e7">
       <style>
-      #mjx-aa98a6b{
+      #mjx-da328e7{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -2454,9 +2530,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.355ex;" xmlns="http://www.w3.org/2000/svg" width="3.883ex" height="1.355ex" role="img" focusable="false" viewBox="0 -442 1716.4 599.1" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="TeXAtom" transform="translate(605,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><path data-c="69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z"></path><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(278,0)"></path><path data-c="69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z" transform="translate(834,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(1112,0)"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mtext>init</mtext></mrow></msub></math></mjx-assistive-mml></mjx-container>
     </span>
   ，显著减少内点法（IPM）的迭代次数，同时 
-    <span id="mjx-b31c48a">
+    <span id="mjx-a1e037e">
       <style>
-      #mjx-b31c48a{
+      #mjx-a1e037e{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -2631,9 +2707,9 @@ g[data-mml-node="xypic"] path {
 <h4 id="目标-2">目标</h4>
 <ul>
 <li>预测哪些不等式约束在最优解处会取等号（活跃约束/紧约束）（Active, 
-    <span id="mjx-7271425">
+    <span id="mjx-9856725">
       <style>
-      #mjx-7271425{
+      #mjx-9856725{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -2796,9 +2872,9 @@ g[data-mml-node="xypic"] path {
 <h4 id="机制-2">机制</h4>
 <ul>
 <li>一旦识别出 Active Set 
-    <span id="mjx-3746e15">
+    <span id="mjx-04d7c09">
       <style>
-      #mjx-3746e15{
+      #mjx-04d7c09{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -2966,9 +3042,9 @@ g[data-mml-node="xypic"] path {
 <ul>
 <li><strong>Multi-label Classification</strong>：每个约束对应一个二分类标签（Active/Inactive）。</li>
 <li><strong>Deep Classification Networks</strong>：输入 
-    <span id="mjx-6e8840f">
+    <span id="mjx-b20ee56">
       <style>
-      #mjx-6e8840f{
+      #mjx-b20ee56{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -3127,9 +3203,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.023ex;" xmlns="http://www.w3.org/2000/svg" width="1.061ex" height="1.618ex" role="img" focusable="false" viewBox="0 -705 469 715" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D703" d="M35 200Q35 302 74 415T180 610T319 704Q320 704 327 704T339 705Q393 701 423 656Q462 596 462 495Q462 380 417 261T302 66T168 -10H161Q125 -10 99 10T60 63T41 130T35 200ZM383 566Q383 668 330 668Q294 668 260 623T204 521T170 421T157 371Q206 370 254 370L351 371Q352 372 359 404T375 484T383 566ZM113 132Q113 26 166 26Q181 26 198 36T239 74T287 161T335 307L340 324H145Q145 321 136 286T120 208T113 132Z"></path></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>θ</mi></math></mjx-assistive-mml></mjx-container>
     </span>
   ，输出 
-    <span id="mjx-63f97c9">
+    <span id="mjx-3c506dc">
       <style>
-      #mjx-63f97c9{
+      #mjx-3c506dc{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -3310,9 +3386,9 @@ g[data-mml-node="xypic"] path {
 </li>
 <li>
 <p><strong>为什么需要 Conformal Prediction？</strong> 直接分类可能出错。Conformal Prediction 可以给出一个包含真值的置信区间（Set-valued prediction），保证以 
-    <span id="mjx-821b87b">
+    <span id="mjx-c7838a5">
       <style>
-      #mjx-821b87b{
+      #mjx-c7838a5{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -3484,9 +3560,9 @@ g[data-mml-node="xypic"] path {
 <ol>
 <li><strong>数据划分</strong>：将数据集划分为训练集（Training Set）和校准集（Calibration Set）。</li>
 <li><strong>模型训练</strong>：在训练集上训练基础模型 
-    <span id="mjx-538485f">
+    <span id="mjx-0a3ec66">
       <style>
-      #mjx-538485f{
+      #mjx-0a3ec66{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -3646,9 +3722,9 @@ g[data-mml-node="xypic"] path {
     </span>
   。</li>
 <li><strong>计算非一致性分数（Non-conformity Score）</strong>：在校准集上，计算每个样本的非一致性分数 
-    <span id="mjx-5dfefdf">
+    <span id="mjx-2b38545">
       <style>
-      #mjx-5dfefdf{
+      #mjx-2b38545{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -3809,9 +3885,9 @@ g[data-mml-node="xypic"] path {
   。该分数衡量预测结果与真实标签的偏差程度。
 <ul>
 <li>回归问题示例：
-    <span id="mjx-838eea">
+    <span id="mjx-e328115">
       <style>
-      #mjx-838eea{
+      #mjx-e328115{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -3971,9 +4047,9 @@ g[data-mml-node="xypic"] path {
     </span>
    （残差绝对值）。</li>
 <li>分类问题示例：
-    <span id="mjx-8fc4ea">
+    <span id="mjx-f156c14">
       <style>
-      #mjx-8fc4ea{
+      #mjx-f156c14{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -4135,9 +4211,9 @@ g[data-mml-node="xypic"] path {
 </ul>
 </li>
 <li><strong>计算分位数（Quantile）</strong>：计算校准集分数的 
-    <span id="mjx-e7e2026">
+    <span id="mjx-4c23a45">
       <style>
-      #mjx-e7e2026{
+      #mjx-4c23a45{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -4296,9 +4372,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="7.105ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 3140.4 1000" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mn" transform="translate(389,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(1111.2,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(2111.4,0)"><path data-c="1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path></g><g data-mml-node="mo" transform="translate(2751.4,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container>
     </span>
    分位数 
-    <span id="mjx-ea9a047">
+    <span id="mjx-193b7c7">
       <style>
-      #mjx-ea9a047{
+      #mjx-193b7c7{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -4458,9 +4534,9 @@ g[data-mml-node="xypic"] path {
     </span>
   。</li>
 <li><strong>构建预测集</strong>：对于新的测试样本 
-    <span id="mjx-3b13306">
+    <span id="mjx-814b9cf">
       <style>
-      #mjx-3b13306{
+      #mjx-814b9cf{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -4619,9 +4695,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.357ex;" xmlns="http://www.w3.org/2000/svg" width="4.237ex" height="1.357ex" role="img" focusable="false" viewBox="0 -442 1872.6 599.8" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="TeXAtom" transform="translate(605,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(556,0)"></path><path data-c="77" d="M90 368Q84 378 76 380T40 385H18V431H24L43 430Q62 430 84 429T116 428Q206 428 221 431H229V385H215Q177 383 177 368Q177 367 221 239L265 113L339 328L333 345Q323 374 316 379Q308 384 278 385H258V431H264Q270 428 348 428Q439 428 454 431H461V385H452Q404 385 404 369Q404 366 418 324T449 234T481 143L496 100L537 219Q579 341 579 347Q579 363 564 373T530 385H522V431H529Q541 428 624 428Q692 428 698 431H703V385H697Q696 385 691 385T682 384Q635 377 619 334L559 161Q546 124 528 71Q508 12 503 1T487 -11H479Q460 -11 456 -4Q455 -3 407 133L361 267Q359 263 266 -4Q261 -11 243 -11H238Q225 -11 220 -3L90 368Z" transform="translate(1000,0)"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mtext>new</mtext></mrow></msub></math></mjx-assistive-mml></mjx-container>
     </span>
   ，其预测集合包含所有满足 
-    <span id="mjx-cdbae98">
+    <span id="mjx-8d7a781">
       <style>
-      #mjx-cdbae98{
+      #mjx-8d7a781{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -4780,9 +4856,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="13.23ex" height="2.398ex" role="img" focusable="false" viewBox="0 -810 5847.9 1060" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g><g data-mml-node="mo" transform="translate(469,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="msub" transform="translate(858,0)"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="TeXAtom" transform="translate(605,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mtext"><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path data-c="65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" transform="translate(556,0)"></path><path data-c="77" d="M90 368Q84 378 76 380T40 385H18V431H24L43 430Q62 430 84 429T116 428Q206 428 221 431H229V385H215Q177 383 177 368Q177 367 221 239L265 113L339 328L333 345Q323 374 316 379Q308 384 278 385H258V431H264Q270 428 348 428Q439 428 454 431H461V385H452Q404 385 404 369Q404 366 418 324T449 234T481 143L496 100L537 219Q579 341 579 347Q579 363 564 373T530 385H522V431H529Q541 428 624 428Q692 428 698 431H703V385H697Q696 385 691 385T682 384Q635 377 619 334L559 161Q546 124 528 71Q508 12 503 1T487 -11H479Q460 -11 456 -4Q455 -3 407 133L361 267Q359 263 266 -4Q261 -11 243 -11H238Q225 -11 220 -3L90 368Z" transform="translate(1000,0)"></path></g></g></g><g data-mml-node="mo" transform="translate(2730.6,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="mi" transform="translate(3175.3,0)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(3665.3,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(4332.1,0)"><path data-c="2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(5387.9,0)"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g><g data-mml-node="mo" transform="translate(316.8,16) translate(-250 0)"><path data-c="5E" d="M112 560L249 694L257 686Q387 562 387 560L361 531Q359 532 303 581L250 627L195 580Q182 569 169 557T148 538L140 532Q138 530 125 546L112 560Z"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mrow data-mjx-texclass="ORD"><mtext>new</mtext></mrow></msub><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo><mo>≤</mo><mrow data-mjx-texclass="ORD"><mover><mi>q</mi><mo stretchy="false">^</mo></mover></mrow></math></mjx-assistive-mml></mjx-container>
     </span>
    的候选 
-    <span id="mjx-94f63a5">
+    <span id="mjx-3bd0013">
       <style>
-      #mjx-94f63a5{
+      #mjx-3bd0013{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -4954,9 +5030,9 @@ g[data-mml-node="xypic"] path {
 <h4 id="目标-4">目标</h4>
 <ul>
 <li>对于非凸项（如 
-    <span id="mjx-e4bd3a9">
+    <span id="mjx-3749c37">
       <style>
-      #mjx-e4bd3a9{
+      #mjx-3749c37{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -5115,9 +5191,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="2.403ex" height="1.464ex" role="img" focusable="false" viewBox="0 -442 1062 647" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mi" transform="translate(572,0)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mi>y</mi></math></mjx-assistive-mml></mjx-container>
     </span>
   ），预测最佳的泰勒展开参考点 
-    <span id="mjx-fc26d67">
+    <span id="mjx-40d2fdf">
       <style>
-      #mjx-fc26d67{
+      #mjx-40d2fdf{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -5293,9 +5369,9 @@ g[data-mml-node="xypic"] path {
 <h4 id="ML-的作用">ML 的作用</h4>
 <ul>
 <li>ML 预测的是全局最优解附近的那个点。在这个点进行泰勒展开 
-    <span id="mjx-220b968">
+    <span id="mjx-158be6">
       <style>
-      #mjx-220b968{
+      #mjx-158be6{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -5459,9 +5535,9 @@ g[data-mml-node="xypic"] path {
 <p>不仅用 ML 预测参数，还可以将训练好的 ML 模型直接作为约束嵌入到优化问题中。</p>
 <h3 id="4-1-普通神经网络的嵌入-MILP">4.1 普通神经网络的嵌入 (MILP)</h3>
 <p>当我们用神经网络拟合复杂物理过程（如 
-    <span id="mjx-3b9d0b4">
+    <span id="mjx-d3acaa4">
       <style>
-      #mjx-3b9d0b4{
+      #mjx-d3acaa4{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -5620,9 +5696,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="10.517ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 4648.6 1000" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"></path></g><g data-mml-node="mo" transform="translate(742.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mtext" transform="translate(1798.6,0)"><path data-c="4E" d="M42 46Q74 48 94 56T118 69T128 86V634H124Q114 637 52 637H25V683H232L235 680Q237 679 322 554T493 303L578 178V598Q572 608 568 613T544 627T492 637H475V683H483Q498 680 600 680Q706 680 715 683H724V637H707Q634 633 622 598L621 302V6L614 0H600Q585 0 582 3T481 150T282 443T171 605V345L172 86Q183 50 257 46H274V0H265Q250 3 150 3Q48 3 33 0H25V46H42Z"></path><path data-c="4E" d="M42 46Q74 48 94 56T118 69T128 86V634H124Q114 637 52 637H25V683H232L235 680Q237 679 322 554T493 303L578 178V598Q572 608 568 613T544 627T492 637H475V683H483Q498 680 600 680Q706 680 715 683H724V637H707Q634 633 622 598L621 302V6L614 0H600Q585 0 582 3T481 150T282 443T171 605V345L172 86Q183 50 257 46H274V0H265Q250 3 150 3Q48 3 33 0H25V46H42Z" transform="translate(750,0)"></path></g><g data-mml-node="mo" transform="translate(3298.6,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(3687.6,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(4259.6,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi><mo>=</mo><mtext>NN</mtext><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container>
     </span>
   ）并嵌入优化模型时，ReLU 激活函数 
-    <span id="mjx-68485c1">
+    <span id="mjx-c1670aa">
       <style>
-      #mjx-68485c1{
+      #mjx-c1670aa{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -5784,9 +5860,9 @@ g[data-mml-node="xypic"] path {
 <h4 id="Big-M-转化">Big-M 转化</h4>
 <ul>
 <li>引入 0-1 整数变量 
-    <span id="mjx-6bec67f">
+    <span id="mjx-ec48a9">
       <style>
-      #mjx-6bec67f{
+      #mjx-ec48a9{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -5945,9 +6021,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="1.109ex" height="1.464ex" role="img" focusable="false" viewBox="0 -442 490 647" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi></math></mjx-assistive-mml></mjx-container>
     </span>
    和大常数 
-    <span id="mjx-d95b0d4">
+    <span id="mjx-5148a4">
       <style>
-      #mjx-d95b0d4{
+      #mjx-5148a4{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -6108,9 +6184,9 @@ g[data-mml-node="xypic"] path {
   ：</li>
 </ul>
 
-    <span id="mjx-5d782d8">
+    <span id="mjx-4e5df17">
       <style>
-      #mjx-5d782d8{
+      #mjx-4e5df17{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -6278,9 +6354,9 @@ g[data-mml-node="xypic"] path {
 <h4 id="结构约束">结构约束</h4>
 <ul>
 <li><strong>非负权重</strong>：所有传递中间层信号的权重必须非负 (
-    <span id="mjx-3196c38">
+    <span id="mjx-cb92a21">
       <style>
-      #mjx-3196c38{
+      #mjx-cb92a21{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -6440,9 +6516,9 @@ g[data-mml-node="xypic"] path {
     </span>
   )。</li>
 <li><strong>直连通道 (Passthrough)</strong>：
-    <span id="mjx-93483f7">
+    <span id="mjx-2c1daae">
       <style>
-      #mjx-93483f7{
+      #mjx-2c1daae{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -6606,9 +6682,9 @@ g[data-mml-node="xypic"] path {
 <h4 id="思考：为什么限制权重非负就能变线性？">思考：为什么限制权重非负就能变线性？</h4>
 <ul>
 <li>由于是在做 Minimization 问题，且 
-    <span id="mjx-705d3ac">
+    <span id="mjx-d58be5a">
       <style>
-      #mjx-705d3ac{
+      #mjx-d58be5a{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -6767,9 +6843,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.312ex;" xmlns="http://www.w3.org/2000/svg" width="6.519ex" height="1.857ex" role="img" focusable="false" viewBox="0 -683 2881.6 821" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D44A" d="M436 683Q450 683 486 682T553 680Q604 680 638 681T677 682Q695 682 695 674Q695 670 692 659Q687 641 683 639T661 637Q636 636 621 632T600 624T597 615Q597 603 613 377T629 138L631 141Q633 144 637 151T649 170T666 200T690 241T720 295T759 362Q863 546 877 572T892 604Q892 619 873 628T831 637Q817 637 817 647Q817 650 819 660Q823 676 825 679T839 682Q842 682 856 682T895 682T949 681Q1015 681 1034 683Q1048 683 1048 672Q1048 666 1045 655T1038 640T1028 637Q1006 637 988 631T958 617T939 600T927 584L923 578L754 282Q586 -14 585 -15Q579 -22 561 -22Q546 -22 542 -17Q539 -14 523 229T506 480L494 462Q472 425 366 239Q222 -13 220 -15T215 -19Q210 -22 197 -22Q178 -22 176 -15Q176 -12 154 304T131 622Q129 631 121 633T82 637H58Q51 644 51 648Q52 671 64 683H76Q118 680 176 680Q301 680 313 683H323Q329 677 329 674T327 656Q322 641 318 637H297Q236 634 232 620Q262 160 266 136L501 550L499 587Q496 629 489 632Q483 636 447 637Q428 637 422 639T416 648Q416 650 418 660Q419 664 420 669T421 676T424 680T428 682T436 683Z"></path></g><g data-mml-node="mo" transform="translate(1325.8,0)"><path data-c="2265" d="M83 616Q83 624 89 630T99 636Q107 636 253 568T543 431T687 361Q694 356 694 346T687 331Q685 329 395 192L107 56H101Q83 58 83 76Q83 77 83 79Q82 86 98 95Q117 105 248 167Q326 204 378 228L626 346L360 472Q291 505 200 548Q112 589 98 597T83 616ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g data-mml-node="mn" transform="translate(2381.6,0)"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>W</mi><mo>≥</mo><mn>0</mn></math></mjx-assistive-mml></mjx-container>
     </span>
    保证了凸性传递。原本非线性的 ReLU 
-    <span id="mjx-e495c63">
+    <span id="mjx-ab60c02">
       <style>
-      #mjx-e495c63{
+      #mjx-ab60c02{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -6930,9 +7006,9 @@ g[data-mml-node="xypic"] path {
    可以被松弛为一组纯线性约束：</li>
 </ul>
 
-    <span id="mjx-513ba6c">
+    <span id="mjx-b8b8399">
       <style>
-      #mjx-513ba6c{
+      #mjx-b8b8399{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -7092,9 +7168,9 @@ g[data-mml-node="xypic"] path {
     </span>
   <ul>
 <li>在最小化目标函数的作用下，变量 
-    <span id="mjx-e3334f1">
+    <span id="mjx-ab75442">
       <style>
-      #mjx-e3334f1{
+      #mjx-ab75442{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -7253,9 +7329,9 @@ g[data-mml-node="xypic"] path {
       <mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.052ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 465 453" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D467" d="M347 338Q337 338 294 349T231 360Q211 360 197 356T174 346T162 335T155 324L153 320Q150 317 138 317Q117 317 117 325Q117 330 120 339Q133 378 163 406T229 440Q241 442 246 442Q271 442 291 425T329 392T367 375Q389 375 411 408T434 441Q435 442 449 442H462Q468 436 468 434Q468 430 463 420T449 399T432 377T418 358L411 349Q368 298 275 214T160 106L148 94L163 93Q185 93 227 82T290 71Q328 71 360 90T402 140Q406 149 409 151T424 153Q443 153 443 143Q443 138 442 134Q425 72 376 31T278 -11Q252 -11 232 6T193 40T155 57Q111 57 76 -3Q70 -11 59 -11H54H41Q35 -5 35 -2Q35 13 93 84Q132 129 225 214T340 322Q352 338 347 338Z"></path></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>z</mi></math></mjx-assistive-mml></mjx-container>
     </span>
    会自动贴合到 
-    <span id="mjx-bf1571d">
+    <span id="mjx-eb252b7">
       <style>
-      #mjx-bf1571d{
+      #mjx-eb252b7{
         display:contents;
         mjx-assistive-mml {
           user-select: text !important;
@@ -7495,82 +7571,6 @@ g[data-mml-node="xypic"] path {
         <tag>ICNN</tag>
         <tag>Decomposition</tag>
         <tag>Literature Review</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Say Hi, Say Cheese</title>
-    <url>/posts/3930ef41.html</url>
-    <content><![CDATA[<h2 id="1-About-Hicheese"><strong>1. About Hicheese</strong></h2>
-<p><strong>Hicheese</strong> is the alias for <strong>Zhou Zhixuan (周芷轩)</strong> on the web.</p>
-<ul>
-<li><strong>Identity</strong>: Undergraduate student at the School of Management and Engineering (SME), Nanjing University.</li>
-<li><strong>Major</strong>: Industrial Intelligence and System Integration (工业智能与系统集成实验班) — an interdisciplinary field crossing <strong>Industrial Engineering</strong> and <strong>Automation</strong>.</li>
-<li><strong>Origin of Name</strong>: Derived from the phrase “Say Hi, Say Cheese”. It represents a simple greeting and a snapshot of the moment.</li>
-</ul>
-<p>This website serves as my personal digital space to archive learning notes, showcase projects, and experiment with web technologies.</p>
-<span id="more"></span>
-<h2 id="2-System-Modules-Status"><strong>2. System Modules &amp; Status</strong></h2>
-<p>This portal is currently under active development. Below is the roadmap and current status of system modules.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Module</th>
-<th style="text-align:left">Description</th>
-<th style="text-align:left">Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>Blog System</strong></td>
-<td style="text-align:left">Archiving academic notes (Optimization, Algorithms) and tech logs.</td>
-<td style="text-align:left">✅ <strong>Live</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Cyber Gallery</strong></td>
-<td style="text-align:left">A masonry-layout gallery for photography and visual collection.</td>
-<td style="text-align:left">🚧 <strong>WIP (Planning)</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>About / CV</strong></td>
-<td style="text-align:left">Detailed academic background, skills, and resume download.</td>
-<td style="text-align:left">🚧 <strong>WIP</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Web Tools</strong></td>
-<td style="text-align:left">Integrated tools including Search, AI Chatbot, etc.</td>
-<td style="text-align:left">🚧 <strong>Partially Implemented</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Interaction</strong></td>
-<td style="text-align:left">Comments (Waline), Visitor Counter.</td>
-<td style="text-align:left">✅ <strong>Live</strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="3-Tech-Stack"><strong>3. Tech Stack</strong></h2>
-<p>This website is built upon a static site generation architecture, ensuring performance and security.</p>
-<ul>
-<li><strong>Core Framework</strong>: <a href="https://hexo.io/">Hexo</a> (v7.x)</li>
-<li><strong>Theme</strong>: <a href="https://butterfly.js.org/">Butterfly</a> (Heavily Customized)</li>
-<li><strong>Deployment</strong>: GitHub Pages + Cloudflare CDN</li>
-<li><strong>Interactive/Backend</strong>: Node.js + Waline (Serverless)</li>
-</ul>
-<h2 id="4-Future-Updates"><strong>4. Future Updates</strong></h2>
-<p>Subsequent updates and development logs regarding this website will be archived under the tag #Dev Log.</p>
-<p>For academic discussions or feedback, please leave a comment below.</p>
-<p><em>Last Updated: 2025-02-09</em></p>
-]]></content>
-      <categories>
-        <category>Dev Log</category>
-      </categories>
-      <tags>
-        <tag>Project Overview</tag>
-        <tag>Hicheese</tag>
-        <tag>Dev Log</tag>
-        <tag>Hexo</tag>
-        <tag>Industrial Intelligence</tag>
-        <tag>System Architecture</tag>
-        <tag>Roadmap</tag>
       </tags>
   </entry>
 </search>
