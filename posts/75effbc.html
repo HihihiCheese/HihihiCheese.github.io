@@ -1,9 +1,169 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Learning-Assisted Relaxations and Approximations</title>
-    <url>/posts/75effbc.html</url>
-    <content><![CDATA[<h2 id="1-引言">1. 引言</h2>
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Learning-Assisted Relaxations and Approximations | Hicheese's Blog</title><meta name="author" content="Hicheese"><meta name="copyright" content="Hicheese"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="A comprehensive synthesis of Chapter 4 &#39;Learning-Assisted Relaxations and Approximations&#39; in Optimization via Relaxation and Decomposition">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Learning-Assisted Relaxations and Approximations">
+<meta property="og:url" content="https://hihihicheese.github.io/posts/75effbc.html">
+<meta property="og:site_name" content="Hicheese&#39;s Blog">
+<meta property="og:description" content="A comprehensive synthesis of Chapter 4 &#39;Learning-Assisted Relaxations and Approximations&#39; in Optimization via Relaxation and Decomposition">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/HihihiCheese.png">
+<meta property="article:published_time" content="2026-02-10T11:00:00.000Z">
+<meta property="article:modified_time" content="2026-02-10T16:50:59.071Z">
+<meta property="article:author" content="Hicheese">
+<meta property="article:tag" content="Decomposition">
+<meta property="article:tag" content="ICNN">
+<meta property="article:tag" content="Literature Review">
+<meta property="article:tag" content="Machine Learning">
+<meta property="article:tag" content="Optimization">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/HihihiCheese.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Learning-Assisted Relaxations and Approximations",
+  "url": "https://hihihicheese.github.io/posts/75effbc.html",
+  "image": "https://github.com/HihihiCheese.png",
+  "datePublished": "2026-02-10T11:00:00.000Z",
+  "dateModified": "2026-02-10T16:50:59.071Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Hicheese",
+      "url": "https://hihihicheese.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/favicon.png"><link rel="canonical" href="https://hihihicheese.github.io/posts/75effbc.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Learning-Assisted Relaxations and Approximations',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><style>body { background: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%) !important; background-attachment: fixed !important; } [data-theme="dark"] body { background: linear-gradient(to top, #1a1a2e 0%, #16213e 99%, #0f3460 100%) !important; background-attachment: fixed !important; } [data-theme="dark"] #footer { background-color: #0f3460 !important; }</style><meta name="generator" content="Hexo 8.1.1"></head><body><div class="bg-animation" id="web_bg" style="background: linear-gradient(to top,;"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/background.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Hicheese's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">Learning-Assisted Relaxations and Approximations</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div></div></nav><div id="post-info"><h1 class="post-title">Learning-Assisted Relaxations and Approximations</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-02-10T11:00:00.000Z" title="发表于 2026-02-10 19:00:00">2026-02-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-02-10T16:50:59.071Z" title="更新于 2026-02-11 00:50:59">2026-02-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Academic-Notes/">Academic Notes</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/posts/75effbc.html#post-comment"><span class="waline-comment-count" data-path="/posts/75effbc.html"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="1-引言">1. 引言</h2>
 <p>同一个固定的物理系统，在不同外部参数（Parameters, 
     <span id="mjx-77db5cc">
       <style>
@@ -7485,92 +7645,133 @@ g[data-mml-node="xypic"] path {
 <li>Angelopoulos, A. N., Bates, S., et al. (2021). Learn then Test: Calibrating Predictive Algorithms to Achieve Risk Control. Nature.</li>
 <li>Grimm, et al. (2022). The convex relaxation barrier, revisited: Tightened single-neuron relaxations for neural network verification.</li>
 </ul>
-]]></content>
-      <categories>
-        <category>Academic Notes</category>
-      </categories>
-      <tags>
-        <tag>Optimization</tag>
-        <tag>Machine Learning</tag>
-        <tag>ICNN</tag>
-        <tag>Decomposition</tag>
-        <tag>Literature Review</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Say Hi, Say Cheese</title>
-    <url>/posts/3930ef41.html</url>
-    <content><![CDATA[<h2 id="1-About-Hicheese"><strong>1. About Hicheese</strong></h2>
-<p><strong>Hicheese</strong> is the alias for <strong>Zhou Zhixuan (周芷轩)</strong> on the web.</p>
-<ul>
-<li><strong>Identity</strong>: Undergraduate student at the School of Management and Engineering (SME), Nanjing University.</li>
-<li><strong>Major</strong>: Industrial Intelligence and System Integration (工业智能与系统集成实验班) — an interdisciplinary field crossing <strong>Industrial Engineering</strong> and <strong>Automation</strong>.</li>
-<li><strong>Origin of Name</strong>: Derived from the phrase “Say Hi, Say Cheese”. It represents a simple greeting and a snapshot of the moment.</li>
-</ul>
-<p>This website serves as my personal digital space to archive learning notes, showcase projects, and experiment with web technologies.</p>
-<span id="more"></span>
-<h2 id="2-System-Modules-Status"><strong>2. System Modules &amp; Status</strong></h2>
-<p>This portal is currently under active development. Below is the roadmap and current status of system modules.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Module</th>
-<th style="text-align:left">Description</th>
-<th style="text-align:left">Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>Blog System</strong></td>
-<td style="text-align:left">Archiving academic notes (Optimization, Algorithms) and tech logs.</td>
-<td style="text-align:left">✅ <strong>Live</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Cyber Gallery</strong></td>
-<td style="text-align:left">A masonry-layout gallery for photography and visual collection.</td>
-<td style="text-align:left">🚧 <strong>WIP (Planning)</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>About / CV</strong></td>
-<td style="text-align:left">Detailed academic background, skills, and resume download.</td>
-<td style="text-align:left">🚧 <strong>WIP</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Web Tools</strong></td>
-<td style="text-align:left">Integrated tools including Search, AI Chatbot, etc.</td>
-<td style="text-align:left">🚧 <strong>Partially Implemented</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Interaction</strong></td>
-<td style="text-align:left">Comments (Waline), Visitor Counter.</td>
-<td style="text-align:left">✅ <strong>Live</strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="3-Tech-Stack"><strong>3. Tech Stack</strong></h2>
-<p>This website is built upon a static site generation architecture, ensuring performance and security.</p>
-<ul>
-<li><strong>Core Framework</strong>: <a href="https://hexo.io/">Hexo</a> (v7.x)</li>
-<li><strong>Theme</strong>: <a href="https://butterfly.js.org/">Butterfly</a> (Heavily Customized)</li>
-<li><strong>Deployment</strong>: GitHub Pages + Cloudflare CDN</li>
-<li><strong>Interactive/Backend</strong>: Node.js + Waline (Serverless)</li>
-</ul>
-<h2 id="4-Future-Updates"><strong>4. Future Updates</strong></h2>
-<p>Subsequent updates and development logs regarding this website will be archived under the tag #Dev Log.</p>
-<p>For academic discussions or feedback, please leave a comment below.</p>
-<p><em>Last Updated: 2025-02-09</em></p>
-]]></content>
-      <categories>
-        <category>Dev Log</category>
-      </categories>
-      <tags>
-        <tag>Project Overview</tag>
-        <tag>Hicheese</tag>
-        <tag>Dev Log</tag>
-        <tag>Hexo</tag>
-        <tag>Industrial Intelligence</tag>
-        <tag>System Architecture</tag>
-        <tag>Roadmap</tag>
-      </tags>
-  </entry>
-</search>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://hihihicheese.github.io">Hicheese</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://hihihicheese.github.io/posts/75effbc.html">https://hihihicheese.github.io/posts/75effbc.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://hihihicheese.github.io" target="_blank">Hicheese's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Optimization/">Optimization</a><a class="post-meta__tags" href="/tags/Machine-Learning/">Machine Learning</a><a class="post-meta__tags" href="/tags/ICNN/">ICNN</a><a class="post-meta__tags" href="/tags/Decomposition/">Decomposition</a><a class="post-meta__tags" href="/tags/Literature-Review/">Literature Review</a></div><div class="post-share"><div class="social-share" data-image="https://github.com/HihihiCheese.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/posts/3930ef41.html" title="Say Hi, Say Cheese"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Say Hi, Say Cheese</div></div><div class="info-2"><div class="info-item-1">Welcome to Hicheese's personal digital space. This is a brief overview of who I am, what this website offers, and the tech stack behind it. </div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="https://github.com/HihihiCheese.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Hicheese</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/HihihiCheese"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/HihihiCheese" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:zhouzhixuan60@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%BC%95%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">1. 引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%9B%9E%E9%A1%BE%EF%BC%9A%E7%BB%8F%E5%85%B8%E5%88%86%E8%A7%A3%E4%B8%8E%E8%BF%AD%E4%BB%A3"><span class="toc-number">2.</span> <span class="toc-text">2. 回顾：经典分解与迭代</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%9D%BE%E5%BC%9B-Lagrangian-Relaxation-LR"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 拉格朗日松弛 (Lagrangian Relaxation, LR)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E4%BC%98%E5%8C%96%E6%9D%A1%E4%BB%B6%E5%88%86%E8%A7%A3-Optimality-Condition-Decomposition-OCD"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 优化条件分解 (Optimality Condition Decomposition, OCD)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Learning-Assisted-Relaxations"><span class="toc-number">3.</span> <span class="toc-text">3. Learning-Assisted Relaxations</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-Warm-Starting"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 Warm Starting</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87"><span class="toc-number">3.1.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E5%88%B6"><span class="toc-number">3.1.2.</span> <span class="toc-text">机制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ML-%E6%96%B9%E6%B3%95"><span class="toc-number">3.1.3.</span> <span class="toc-text">ML 方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E7%8C%AE"><span class="toc-number">3.1.4.</span> <span class="toc-text">文献</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-Identifying-Active-Constraints"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 Identifying Active Constraints</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87-2"><span class="toc-number">3.2.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E5%88%B6-2"><span class="toc-number">3.2.2.</span> <span class="toc-text">机制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%A0%E9%94%99"><span class="toc-number">3.2.3.</span> <span class="toc-text">纠错</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ML-%E6%96%B9%E6%B3%95-2"><span class="toc-number">3.2.4.</span> <span class="toc-text">ML 方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E7%8C%AE-2"><span class="toc-number">3.2.5.</span> <span class="toc-text">文献</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-Identifying-Invariant-Variables"><span class="toc-number">3.3.</span> <span class="toc-text">3.3 Identifying Invariant Variables</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87-3"><span class="toc-number">3.3.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E5%88%B6-3"><span class="toc-number">3.3.2.</span> <span class="toc-text">机制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ML-%E6%96%B9%E6%B3%95-3"><span class="toc-number">3.3.3.</span> <span class="toc-text">ML 方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E-Conformal-Prediction"><span class="toc-number">3.3.4.</span> <span class="toc-text">关于 Conformal Prediction</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E7%8C%AE-3"><span class="toc-number">3.3.5.</span> <span class="toc-text">文献</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-Linearizing-Convexifying"><span class="toc-number">3.4.</span> <span class="toc-text">3.4 Linearizing &amp; Convexifying</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87-4"><span class="toc-number">3.4.1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%80%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81-Linearizing-Convexifying%EF%BC%9F"><span class="toc-number">3.4.2.</span> <span class="toc-text">思考：为什么需要 Linearizing &amp; Convexifying？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E9%A2%84%E6%B5%8B%EF%BC%9F"><span class="toc-number">3.4.3.</span> <span class="toc-text">为什么需要预测？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ML-%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">3.4.4.</span> <span class="toc-text">ML 的作用</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Learning-Assisted-Approximations"><span class="toc-number">4.</span> <span class="toc-text">4. Learning-Assisted Approximations</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E6%99%AE%E9%80%9A%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%B5%8C%E5%85%A5-MILP"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 普通神经网络的嵌入 (MILP)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Big-M-%E8%BD%AC%E5%8C%96"><span class="toc-number">4.1.1.</span> <span class="toc-text">Big-M 转化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%8E%E6%9E%9C"><span class="toc-number">4.1.2.</span> <span class="toc-text">后果</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-Input-Convex-Neural-Networks-ICNN"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 Input Convex Neural Networks (ICNN)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E7%BA%A6%E6%9D%9F"><span class="toc-number">4.2.1.</span> <span class="toc-text">结构约束</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%9D%E8%80%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E9%99%90%E5%88%B6%E6%9D%83%E9%87%8D%E9%9D%9E%E8%B4%9F%E5%B0%B1%E8%83%BD%E5%8F%98%E7%BA%BF%E6%80%A7%EF%BC%9F"><span class="toc-number">4.2.2.</span> <span class="toc-text">思考：为什么限制权重非负就能变线性？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%93%E8%AE%BA"><span class="toc-number">4.2.3.</span> <span class="toc-text">结论</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Bridge-between-data-and-solver"><span class="toc-number">4.2.4.</span> <span class="toc-text">Bridge between data and solver</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E7%8C%AE-4"><span class="toc-number">4.2.5.</span> <span class="toc-text">文献</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%80%BB%E7%BB%93"><span class="toc-number">5.</span> <span class="toc-text">5. 总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E6%96%B9%E6%B3%95%E8%AE%BA%E6%80%BB%E7%BB%93%E4%B8%8E%E5%AF%B9%E6%AF%94"><span class="toc-number">5.1.</span> <span class="toc-text">5.1 方法论总结与对比</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#References"><span class="toc-number">6.</span> <span class="toc-text">References</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/75effbc.html" title="Learning-Assisted Relaxations and Approximations">Learning-Assisted Relaxations and Approximations</a><time datetime="2026-02-10T11:00:00.000Z" title="发表于 2026-02-10 19:00:00">2026-02-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/3930ef41.html" title="Say Hi, Say Cheese">Say Hi, Say Cheese</a><time datetime="2025-02-09T12:00:00.000Z" title="发表于 2025-02-09 20:00:00">2025-02-09</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Hicheese</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
+
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@4.1.0/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  let initFn = window.walineFn || null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const destroyWaline = ele => ele.destroy()
+
+  const initWaline = (Fn, el = document, path = window.location.pathname) => {
+    const waline = Fn({
+      el: el.querySelector('#waline-wrap'),
+      serverURL: 'https://waline.vercel.app',
+      pageview: false,
+      dark: 'html[data-theme="dark"]',
+      comment: true,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyWaline = () => {
+        destroyWaline(waline)
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const loadWaline = (el, path) => {
+    if (initFn) initWaline(initFn, el, path)
+    else {
+      btf.getCSS('https://cdn.jsdelivr.net/npm/@waline/client@3.8.0/dist/waline.min.css')
+        .then(() => import('https://cdn.jsdelivr.net/npm/@waline/client@3.8.0/dist/waline.min.js'))
+        .then(({ init }) => {
+          initFn = init || Waline.init
+          initWaline(initFn, el, path)
+          window.walineFn = initFn
+        })
+    }
+  }
+
+  if (isShuoshuo) {
+    'Waline' === 'Waline'
+      ? window.shuoshuoComment = { loadComment: loadWaline } 
+      : window.loadOtherComment = loadWaline
+    return
+  }
+
+  if ('Waline' === 'Waline' || !false) {
+    if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script></div><script src="/js/cat_click_v2.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div></body></html>
