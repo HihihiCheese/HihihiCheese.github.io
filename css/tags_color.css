@@ -1,0 +1,56 @@
+/* =========================================================
+   Override Butterfly Tag Colors
+   Design: Uniform Blue Style
+   ========================================================= */
+
+/* 1. 覆盖 标签云页面 (Tags Page) 的颜色 */
+.tag-cloud-list a {
+  background-color: #e3eeff !important; /* Light模式背景：浅蓝 */
+  color: #0f3460 !important;            /* Light模式文字：深蓝 */
+  border-radius: 8px;                   /* 稍微圆润一点 */
+  transition: all 0.3s ease;            /* 增加平滑过渡 */
+}
+
+/* 标签云 - 鼠标悬停效果 */
+.tag-cloud-list a:hover {
+  background-color: #0f3460 !important;
+  color: #ffffff !important;
+  transform: scale(1.05); /* 悬停轻微放大 */
+}
+
+/* 2. 覆盖 文章内和首页卡片 (Post & Cards) 的标签颜色 */
+#article-container .tag_share .post-meta__tags,
+.article-sort-item__tags a,
+.post-meta__tags a {
+  background-color: #e3eeff !important;
+  color: #0f3460 !important;
+}
+
+/* 文章内标签 - 鼠标悬停效果 */
+#article-container .tag_share .post-meta__tags:hover,
+.article-sort-item__tags a:hover,
+.post-meta__tags a:hover {
+  background-color: #0f3460 !important;
+  color: #ffffff !important;
+}
+
+/* =========================================================
+   Dark Mode Adaptation (深色模式适配)
+   ========================================================= */
+[data-theme="dark"] .tag-cloud-list a,
+[data-theme="dark"] #article-container .tag_share .post-meta__tags,
+[data-theme="dark"] .article-sort-item__tags a,
+[data-theme="dark"] .post-meta__tags a {
+  background-color: #0f3460 !important; /* Dark模式背景：深蓝 */
+  color: #e3eeff !important;            /* Dark模式文字：浅蓝 */
+  box-shadow: none;
+}
+
+/* Dark Mode - 鼠标悬停 */
+[data-theme="dark"] .tag-cloud-list a:hover,
+[data-theme="dark"] #article-container .tag_share .post-meta__tags:hover,
+[data-theme="dark"] .article-sort-item__tags a:hover,
+[data-theme="dark"] .post-meta__tags a:hover {
+  background-color: #e3eeff !important;
+  color: #0f3460 !important;
+}
